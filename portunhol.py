@@ -12,7 +12,7 @@ import re
 class Portunholator:
   regexps = [
              # palavras
-             (r"\beu\b", "jo"),
+             (r"\beu\b", "yo"),
              (r"\bmas\b", "pero"),
              (r"\buma(s{0,1})\b", r"una\1"),
              (r"\bum\b", "uno"),
@@ -21,6 +21,7 @@ class Portunholator:
              (r"\b(tu|você)\b", "usted"),
              (r"\bdo\b", "del"),
              (r"\bem\b", "en"),
+             (r"\bbem\b", "bien"),
              (r"\bbom\b", "bueno"),
              (r"\b(a|o)(s?)\b", r"l\1\2"),
              (r"\bé\b", "es"),
@@ -39,6 +40,8 @@ class Portunholator:
              (r"\bdoce\b", "dulce"),
              (r"\bfora\b", "fuera"),
              (r"\bou\b", "o"),
+             (r"\bcoca\b", "cueca"),
+             (r"\bcola\b", "cuela"),             
 
              # pedaços
              (r"\b(\w{2,}?)ção\b", r"\1ción"),
